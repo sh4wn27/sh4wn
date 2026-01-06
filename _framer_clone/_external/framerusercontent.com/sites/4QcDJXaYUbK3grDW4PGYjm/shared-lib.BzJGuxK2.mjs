@@ -1,2 +1,0 @@
-import{t as e}from"./rolldown-runtime.CcuScYSb.mjs";function t(e,t){return{description:`A sleek and modern portfolio website template designed for creatives to showcase their work with elegance and clarity.`,favicon:`/_external/framerusercontent.com/assets/V7UaXvCzyWSFpIQOksZnL1lQ9Q.png`,robots:`max-image-preview:large`,socialImage:`/_external/framerusercontent.com/assets/tB4I5hVpOYTx4Rhjo66alSfHcU.png`,title:`Luzia - Portfolio Template`}}var n=e((()=>{}));export{t as n,n as t};
-//# sourceMappingURL=shared-lib.BzJGuxK2.mjs.map
