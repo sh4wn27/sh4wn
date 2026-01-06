@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en-US" xml:lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>
+		Data-Driven Prediction of Metal-Organic Dissolution and Adhesion Using Machine Learning
+							| Journal of Student-Scientists' Research
+			</title>
+
+	
+<meta name="generator" content="Open Journal Systems 3.3.0.19">
+<link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" />
+<meta name="DC.Creator.PersonalName" content="Devin Wanchoo"/>
+<meta name="DC.Creator.PersonalName" content="Neeraj Dandamudi"/>
+<meta name="DC.Creator.PersonalName" content="Shawn Li"/>
+<meta name="DC.Creator.PersonalName" content="Junyi Wang"/>
+<meta name="DC.Creator.PersonalName" content="Xijin Zhang"/>
+<meta name="DC.Date.created" scheme="ISO8601" content="2025-09-25"/>
+<meta name="DC.Date.dateSubmitted" scheme="ISO8601" content="2025-09-20"/>
+<meta name="DC.Date.issued" scheme="ISO8601" content="2025-09-25"/>
+<meta name="DC.Date.modified" scheme="ISO8601" content="2025-09-25"/>
+<meta name="DC.Description" xml:lang="en" content="Natural biomolecules, like phenolic compounds, are important to regulate metal ion dissolution and adhesion in various chemical and biological systems. However, there is a gap in predictive understanding of how environmental variables, organic ligands, and metal properties interact to influence these processes. This gap limits the production of accurate models for predicting metal-organic interactions, which are important in fields ranging from sustainable agriculture to biomaterials engineering.&amp;nbsp;
+This study seeks to fill this gap by compiling a dataset of 71 experimentally validated metal-organic-environmental interactions, 45 adhesive and 26 dissolution reactions, and training machine learning models to predict both outcomes. The molecular properties of metal ions, including ionic radius, polarizability, electron affinity, atomic number, and electron orbital configurations, were compiled from public databases like PubChem. 41 organic compounds were processed through Mordred to generate 1,614 structural and topological molecular descriptors per compound. Combined with environmental variables like pH, compound concentration, reaction temperature, and reaction speed, this information was merged into a single unified dataset for model development.&amp;nbsp;
+To support the predictive model, Random Forest and Support Vector Machine (SVM) models were trained with two main goals: to identify environmental conditions and molecules that maximize reactivity and produce favorable results, and to identify key molecular features and functional groups driving dissolution or adhesion. By learning from known reactions, the models reduce the need for trial-and-error experimentation and allow for improved compound selection. This work establishes a scalable, data-driven platform for simulating and guiding metal-organic reactivity in both natural and engineered environments.&amp;nbsp;"/>
+<meta name="DC.Identifier" content="5366"/>
+<meta name="DC.Identifier.DOI" content="10.13021/jssr2025.5366"/>
+<meta name="DC.Identifier.URI" content="https://journals.gmu.edu/jssr/article/view/5366"/>
+<meta name="DC.Language" scheme="ISO639-1" content="en"/>
+<meta name="DC.Rights" content="Copyright (c) 2025 "/>
+<meta name="DC.Rights" content="/_external/creativecommons.org/licenses/by-sa/4.0"/>
+<meta name="DC.Source" content="Journal of Student-Scientists' Research"/>
+<meta name="DC.Source.ISSN" content="2689-7679"/>
+<meta name="DC.Source.Volume" content="7"/>
+<meta name="DC.Source.URI" content="https://journals.gmu.edu/jssr"/>
+<meta name="DC.Title" content="Data-Driven Prediction of Metal-Organic Dissolution and Adhesion Using Machine Learning"/>
+<meta name="DC.Type" content="Text.Serial.Journal"/>
+<meta name="DC.Type.articleType" content="College of Engineering and Computing: Department of Civil, Environmental and Infrastructure Engineering"/>
+<meta name="gs_meta_revision" content="1.1"/>
+<meta name="citation_journal_title" content="Journal of Student-Scientists' Research"/>
+<meta name="citation_journal_abbrev" content="J. Stu. Sci. Res."/>
+<meta name="citation_issn" content="2689-7679"/> 
+<meta name="citation_author" content="Devin Wanchoo"/>
+<meta name="citation_author_institution" content="Sid and Reva Dewberry Department of Civil, Environmental, and Infrastructure Engineering, George Mason University, Fairfax, VA"/>
+<meta name="citation_author" content="Neeraj Dandamudi"/>
+<meta name="citation_author_institution" content="Sid and Reva Dewberry Department of Civil, Environmental, and Infrastructure Engineering, George Mason University, Fairfax, VA"/>
+<meta name="citation_author" content="Shawn Li"/>
+<meta name="citation_author_institution" content="Sid and Reva Dewberry Department of Civil, Environmental, and Infrastructure Engineering, George Mason University, Fairfax, VA"/>
+<meta name="citation_author" content="Junyi Wang"/>
+<meta name="citation_author_institution" content="Sid and Reva Dewberry Department of Civil, Environmental, and Infrastructure Engineering, George Mason University, Fairfax, VA"/>
+<meta name="citation_author" content="Xijin Zhang"/>
+<meta name="citation_author_institution" content="Sid and Reva Dewberry Department of Civil, Environmental, and Infrastructure Engineering, George Mason University, Fairfax, VA"/>
+<meta name="citation_title" content="Data-Driven Prediction of Metal-Organic Dissolution and Adhesion Using Machine Learning"/>
+<meta name="citation_language" content="en"/>
+<meta name="citation_date" content="2025/09/25"/>
+<meta name="citation_volume" content="7"/>
+<meta name="citation_doi" content="10.13021/jssr2025.5366"/>
+<meta name="citation_abstract_html_url" content="https://journals.gmu.edu/jssr/article/view/5366"/>
+	<link rel="stylesheet" href="https://journals.gmu.edu/jssr/$$$call$$$/page/page/css?name=stylesheet" type="text/css" /><link rel="stylesheet" href="/_external/journals.gmu.edu/lib/pkp/styles/fontawesome/fontawesome.css__qs__v%3D3.3.0.19" type="text/css" />
+</head>
+<body class="pkp_page_article pkp_op_view has_site_logo" dir="ltr">
+
+	<div class="pkp_structure_page">
+
+				<header class="pkp_structure_head" id="headerNavigationContainer" role="banner">
+						
+ <nav class="cmp_skip_to_content" aria-label="Jump to content links">
+	<a href="#pkp_content_main">Skip to main content</a>
+	<a href="#siteNav">Skip to main navigation menu</a>
+		<a href="#pkp_content_footer">Skip to site footer</a>
+</nav>
+
+			<div class="pkp_head_wrapper">
+
+				<div class="pkp_site_name_wrapper">
+					<button class="pkp_site_nav_toggle">
+						<span>Open Menu</span>
+					</button>
+										<div class="pkp_site_name">
+																<a href="						https://journals.gmu.edu/jssr/index
+					" class="is_img">
+							<img src="/_external/journals.gmu.edu/public/journals/18/pageHeaderLogoImage_en_US.png" width="5495" height="667" alt="JSSR logo" />
+						</a>
+										</div>
+				</div>
+
+				
+				<nav class="pkp_site_nav_menu" aria-label="Site Navigation">
+					<a id="siteNav"></a>
+					<div class="pkp_navigation_primary_row">
+						<div class="pkp_navigation_primary_wrapper">
+																				<ul id="navigationPrimary" class="pkp_navigation_primary pkp_nav_list">
+								<li class="">
+				<a href="https://journals.gmu.edu/jssr/issue/current">
+					Current
+				</a>
+							</li>
+								<li class="">
+				<a href="https://journals.gmu.edu/jssr/issue/archive">
+					Archives
+				</a>
+							</li>
+								<li class="">
+				<a href="https://journals.gmu.edu/jssr/cat">
+					Abstracts by Department
+				</a>
+									<ul>
+																					<li class="">
+									<a href="https://journals.gmu.edu/index.php/jssr/catalog/category/cos">
+										College of Science
+									</a>
+								</li>
+																												<li class="">
+									<a href="https://journals.gmu.edu/index.php/jssr/catalog/category/cec">
+										College of Engineering and Computing
+									</a>
+								</li>
+																												<li class="">
+									<a href="https://journals.gmu.edu/index.php/jssr/catalog/category/chss">
+										College of Humanities and Social Sciences
+									</a>
+								</li>
+																												<li class="">
+									<a href="https://journals.gmu.edu/index.php/jssr/catalog/category/cph">
+										College of Public Health
+									</a>
+								</li>
+																												<li class="">
+									<a href="https://journals.gmu.edu/index.php/jssr/catalog/category/cvpa">
+										College of Visual and Performing Arts
+									</a>
+								</li>
+																												<li class="">
+									<a href="https://journals.gmu.edu/index.php/jssr/catalog/category/facmgmt">
+										Facilities Management
+									</a>
+								</li>
+																												<li class="">
+									<a href="https://journals.gmu.edu/index.php/jssr/catalog/category/ibi">
+										Institute for Biohealth Innovation
+									</a>
+								</li>
+																												<li class="">
+									<a href="https://journals.gmu.edu/index.php/jssr/catalog/category/idi">
+										Institute for Digital Innovation
+									</a>
+								</li>
+																												<li class="">
+									<a href="https://journals.gmu.edu/index.php/jssr/catalog/category/ise">
+										Institute for a Sustainable Earth
+									</a>
+								</li>
+																												<li class="">
+									<a href="https://journals.gmu.edu/index.php/jssr/catalog/category/kras">
+										Krasnow Institute for Advanced Study
+									</a>
+								</li>
+																												<li class="">
+									<a href="https://journals.gmu.edu/index.php/jssr/catalog/category/equ">
+										Marion duPont Scott Equine Medical Center
+									</a>
+								</li>
+																												<li class="">
+									<a href="https://journals.gmu.edu/index.php/jssr/catalog/category/business">
+										School of Business
+									</a>
+								</li>
+																												<li class="">
+									<a href="https://journals.gmu.edu/index.php/jssr/catalog/category/vsgi">
+										Virginia Serious Games Institute
+									</a>
+								</li>
+																		</ul>
+							</li>
+								<li class="">
+				<a href="https://journals.gmu.edu/jssr/announcement">
+					Announcements
+				</a>
+							</li>
+								<li class="">
+				<a href="https://journals.gmu.edu/jssr/about">
+					About
+				</a>
+									<ul>
+																					<li class="">
+									<a href="https://journals.gmu.edu/jssr/about">
+										About the Journal
+									</a>
+								</li>
+																												<li class="">
+									<a href="https://journals.gmu.edu/jssr/about/editorialTeam">
+										Editorial Team
+									</a>
+								</li>
+																												<li class="">
+									<a href="https://journals.gmu.edu/jssr/about/contact">
+										Contact
+									</a>
+								</li>
+																		</ul>
+							</li>
+			</ul>
+
+				
+
+																						<div class="pkp_navigation_search_wrapper">
+									<a href="https://journals.gmu.edu/jssr/search" class="pkp_search pkp_search_desktop">
+										<span class="fa fa-search" aria-hidden="true"></span>
+										Search
+									</a>
+								</div>
+													</div>
+					</div>
+					<div class="pkp_navigation_user_wrapper" id="navigationUserWrapper">
+							<ul id="navigationUser" class="pkp_navigation_user pkp_nav_list">
+															<li class="profile">
+				<a href="https://journals.gmu.edu/jssr/login">
+					Login
+				</a>
+							</li>
+										</ul>
+
+					</div>
+				</nav>
+			</div><!-- .pkp_head_wrapper -->
+		</header><!-- .pkp_structure_head -->
+
+						<div class="pkp_structure_content has_sidebar">
+			<div class="pkp_structure_main" role="main">
+				<a id="pkp_content_main"></a>
+
+<div class="page page_article">
+			<nav class="cmp_breadcrumbs" role="navigation" aria-label="You are here:">
+	<ol>
+		<li>
+			<a href="https://journals.gmu.edu/jssr/index">
+				Home
+			</a>
+			<span class="separator">/</span>
+		</li>
+		<li>
+			<a href="https://journals.gmu.edu/jssr/issue/archive">
+				Archives
+			</a>
+			<span class="separator">/</span>
+		</li>
+					<li>
+				<a href="https://journals.gmu.edu/jssr/issue/view/319">
+					Vol. 7 (2025)
+				</a>
+				<span class="separator">/</span>
+			</li>
+				<li class="current" aria-current="page">
+			<span aria-current="page">
+									College of Engineering and Computing: Department of Civil, Environmental and Infrastructure Engineering
+							</span>
+		</li>
+	</ol>
+</nav>
+	
+		  	 <article class="obj_article_details">
+
+		
+	<h1 class="page_title">
+		Data-Driven Prediction of Metal-Organic Dissolution and Adhesion Using Machine Learning
+	</h1>
+
+	
+	<div class="row">
+		<div class="main_entry">
+
+							<section class="item authors">
+					<h2 class="pkp_screen_reader">Authors</h2>
+					<ul class="authors">
+											<li>
+							<span class="name">
+								Devin Wanchoo
+							</span>
+															<span class="affiliation">
+									Sid and Reva Dewberry Department of Civil, Environmental, and Infrastructure Engineering, George Mason University, Fairfax, VA
+																	</span>
+																				</li>
+											<li>
+							<span class="name">
+								Neeraj Dandamudi
+							</span>
+															<span class="affiliation">
+									Sid and Reva Dewberry Department of Civil, Environmental, and Infrastructure Engineering, George Mason University, Fairfax, VA
+																	</span>
+																				</li>
+											<li>
+							<span class="name">
+								Shawn Li
+							</span>
+															<span class="affiliation">
+									Sid and Reva Dewberry Department of Civil, Environmental, and Infrastructure Engineering, George Mason University, Fairfax, VA
+																	</span>
+																				</li>
+											<li>
+							<span class="name">
+								Junyi Wang
+							</span>
+															<span class="affiliation">
+									Sid and Reva Dewberry Department of Civil, Environmental, and Infrastructure Engineering, George Mason University, Fairfax, VA
+																	</span>
+																				</li>
+											<li>
+							<span class="name">
+								Xijin Zhang
+							</span>
+															<span class="affiliation">
+									Sid and Reva Dewberry Department of Civil, Environmental, and Infrastructure Engineering, George Mason University, Fairfax, VA
+																	</span>
+																				</li>
+										</ul>
+				</section>
+			
+																												<section class="item doi">
+						<h2 class="label">
+														DOI:
+						</h2>
+						<span class="value">
+							<a href="/_external/doi.org/10.13021/jssr2025.5366">
+								/_external/doi.org/10.13021/jssr2025.5366
+							</a>
+						</span>
+					</section>
+							
+						
+										<section class="item abstract">
+					<h2 class="label">Abstract</h2>
+					<p>Natural biomolecules, like phenolic compounds, are important to regulate metal ion dissolution and adhesion in various chemical and biological systems. However, there is a gap in predictive understanding of how environmental variables, organic ligands, and metal properties interact to influence these processes. This gap limits the production of accurate models for predicting metal-organic interactions, which are important in fields ranging from sustainable agriculture to biomaterials engineering. </p>
+<p>This study seeks to fill this gap by compiling a dataset of 71 experimentally validated metal-organic-environmental interactions, 45 adhesive and 26 dissolution reactions, and training machine learning models to predict both outcomes. The molecular properties of metal ions, including ionic radius, polarizability, electron affinity, atomic number, and electron orbital configurations, were compiled from public databases like PubChem. 41 organic compounds were processed through Mordred to generate 1,614 structural and topological molecular descriptors per compound. Combined with environmental variables like pH, compound concentration, reaction temperature, and reaction speed, this information was merged into a single unified dataset for model development. </p>
+<p>To support the predictive model, Random Forest and Support Vector Machine (SVM) models were trained with two main goals: to identify environmental conditions and molecules that maximize reactivity and produce favorable results, and to identify key molecular features and functional groups driving dissolution or adhesion. By learning from known reactions, the models reduce the need for trial-and-error experimentation and allow for improved compound selection. This work establishes a scalable, data-driven platform for simulating and guiding metal-organic reactivity in both natural and engineered environments. </p>
+				</section>
+			
+			
+
+																																															
+						
+		</div><!-- .main_entry -->
+
+		<div class="entry_details">
+
+						
+									
+						<div class="item published">
+				<section class="sub_item">
+					<h2 class="label">
+						Published
+					</h2>
+					<div class="value">
+																			<span>2025-09-25</span>
+																	</div>
+				</section>
+							</div>
+			
+						
+										<div class="item issue">
+
+											<section class="sub_item">
+							<h2 class="label">
+								Issue
+							</h2>
+							<div class="value">
+								<a class="title" href="https://journals.gmu.edu/jssr/issue/view/319">
+									Vol. 7 (2025)
+								</a>
+							</div>
+						</section>
+					
+											<section class="sub_item">
+							<h2 class="label">
+								Section
+							</h2>
+							<div class="value">
+								College of Engineering and Computing: Department of Civil, Environmental and Infrastructure Engineering
+							</div>
+						</section>
+					
+									</div>
+			
+															
+										<div class="item copyright">
+					<h2 class="label">
+						License
+					</h2>
+																									<a rel="license" href="/_external/creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" src="//i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><p>This work is licensed under a <a rel="license" href="/_external/creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
+																
+				</div>
+			
+			
+
+		</div><!-- .entry_details -->
+	</div><!-- .row -->
+
+</article>
+
+	
+
+</div><!-- .page -->
+
+	</div><!-- pkp_structure_main -->
+
+									<div class="pkp_structure_sidebar left" role="complementary" aria-label="Sidebar">
+				<div class="pkp_block block_custom" id="customblock-assip">
+	<h2 class="title pkp_screen_reader">assip</h2>
+	<div class="content">
+		<hr>
+<p>A publication of the <a href="http://assip.cos.gmu.edu" target="_blank" rel="noopener">Aspiring Scientists Summer Internship Program</a> a program of the <a href="http://cos.gmu.edu" target="_blank" rel="noopener">College of Science, George Mason University.</a>&nbsp;</p>
+<hr>
+<p><a href="https://cos.gmu.edu"><img src="/_external/journals.gmu.edu/public/site/images/wallyg/gmu-department-logo3-5feb26a9ff6ef970232d643b3eea3cf2.png" alt="GMU College of Science" width="690" height="160"></a></p>
+<hr>
+<p><a title="Mason Publishing homepage" href="https://publishing.gmu.edu" target="_blank" rel="noopener"> <img src="/_external/journals.gmu.edu/public/site/images/wallyg/masonpublishinggrouplogo.png" alt="Visit the Mason Libraries homepage" width="492" height="303"></a></p>
+<hr><center>
+<p>Published with support from the <a href="https://library.gmu.edu">George Mason University Libraries'</a> <a href="https://publishing.gmu.edu">Mason Publishing Group</a>.</p>
+</center><hr>
+	</div>
+</div>
+
+			</div><!-- pkp_sidebar.left -->
+			</div><!-- pkp_structure_content -->
+
+<div class="pkp_structure_footer_wrapper" role="contentinfo">
+	<a id="pkp_content_footer"></a>
+
+	<div class="pkp_structure_footer">
+
+		
+		<div class="pkp_brand_footer" role="complementary">
+			<a href="https://journals.gmu.edu/jssr/about/aboutThisPublishingSystem">
+				<img alt="More information about the publishing system, Platform and Workflow by OJS/PKP." src="/_external/journals.gmu.edu/templates/images/ojs_brand.png">
+			</a>
+		</div>
+	</div>
+</div><!-- pkp_structure_footer_wrapper -->
+
+</div><!-- pkp_structure_page -->
+
+<script src="/_external/journals.gmu.edu/lib/pkp/lib/vendor/components/jquery/jquery.min.js__qs__v%3D3.3.0.19" type="text/javascript"></script><script src="/_external/journals.gmu.edu/lib/pkp/lib/vendor/components/jqueryui/jquery-ui.min.js__qs__v%3D3.3.0.19" type="text/javascript"></script><script src="/_external/journals.gmu.edu/plugins/themes/default/js/lib/popper/popper.js__qs__v%3D3.3.0.19" type="text/javascript"></script><script src="/_external/journals.gmu.edu/plugins/themes/default/js/lib/bootstrap/util.js__qs__v%3D3.3.0.19" type="text/javascript"></script><script src="/_external/journals.gmu.edu/plugins/themes/default/js/lib/bootstrap/dropdown.js__qs__v%3D3.3.0.19" type="text/javascript"></script><script src="/_external/journals.gmu.edu/plugins/themes/default/js/main.js__qs__v%3D3.3.0.19" type="text/javascript"></script>
+
+
+</body>
+</html>
