@@ -111,7 +111,7 @@ function ProjectCard({ project, index }: { project: (typeof projects)[0]; index:
           onError={(e) => { (e.target as HTMLImageElement).style.display = "none"; }}
         />
         {/* Number watermark */}
-        <div className="absolute bottom-3 left-5 text-[5rem] font-display font-black text-black/8 leading-none select-none pointer-events-none">
+        <div className={`absolute bottom-3 left-5 text-[5rem] font-display font-black leading-none select-none pointer-events-none ${project.number === "03" || project.number === "05" ? "text-white/20" : "text-black/8"}`}>
           {project.number}
         </div>
         {project.status && (
