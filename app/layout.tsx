@@ -17,7 +17,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Shawn Li — Engineer. Researcher. Builder.",
+  title: "sh4wn",
   description:
     "Junior at TJHSST. Building at the intersection of AI, biomedicine, and robotics. Creator of CAPA, SkinAI, and Growing Up with Robotics.",
   openGraph: {
