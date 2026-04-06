@@ -5,9 +5,9 @@ import { useRef } from "react";
 
 const traits = [
   { label: "Competitive Cuber", desc: "Rubik's cube competitor" },
-  { label: "Lacrosse", desc: "Offensive wing midfielder" },
+  { label: "Lacrosse", desc: "Offensive  midfielder" },
   { label: "ABRSM Grade 8", desc: "Piano · teaches music" },
-  { label: "Youth Mentor", desc: "Area Youth Ministry DMV" },
+  { label: "Youth Volunteer", desc: "Area Youth Ministry DMV" },
 ];
 
 const research = [
@@ -48,9 +48,6 @@ export default function About() {
               I&apos;ve conducted research at Stanford (iGEM), George Mason University (ASSIP),
               and Children&apos;s National Hospital. CAPA is my effort to turn that lived experience
               into something that might genuinely help the next kid in that situation.
-            </p>
-            <p>
-              4.41 weighted GPA
             </p>
           </div>
 
