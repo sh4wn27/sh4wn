@@ -72,6 +72,7 @@ const projects = [
     links: [],
     gradient: "from-[#f0ead5] via-[#e8e0c0] to-[#d8d0a0]",
     image: "/images/05.jpg",
+    imagePosition: "object-top",
   },
   {
     number: "06",
@@ -107,7 +108,7 @@ function ProjectCard({ project, index }: { project: (typeof projects)[0]; index:
           src={project.image}
           alt={project.title}
           fill
-          className="object-cover transition-transform duration-500 group-hover:scale-105"
+          className={`object-cover transition-transform duration-500 group-hover:scale-105 ${project.imagePosition ?? "object-center"}`}
           onError={(e) => { (e.target as HTMLImageElement).style.display = "none"; }}
         />
         {/* Number watermark */}
