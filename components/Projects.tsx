@@ -72,7 +72,7 @@ const projects = [
     links: [],
     gradient: "from-[#f0ead5] via-[#e8e0c0] to-[#d8d0a0]",
     image: "/images/05.jpg",
-    imagePosition: "object-top",
+    imagePosition: "object-[center_25%]",
   },
   {
     number: "06",
