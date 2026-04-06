@@ -6,7 +6,7 @@ import { useRef } from "react";
 const papers = [
   {
     title: "Competing-Risks Survival Analysis for Pediatric HSCT",
-    venue: "arXiv — in preparation",
+    venue: "2026 — in preparation",
     year: "2025",
     description:
       "Applying competing-risks survival analysis and ML to predict acute GvHD in 187 pediatric bone marrow transplant patients. Severe aGvHD risk plateaus by day 100 (CIF=0.214). LASSO-selected Cox model achieved omnibus significance (p=0.002).",
@@ -16,7 +16,7 @@ const papers = [
   {
     title: "CAPA: Computational Architecture for Predicting Alloimmunity",
     venue: "Targeting Bioinformatics / Blood Advances",
-    year: "2025",
+    year: "2026",
     description:
       "Full framework paper describing the ESM-2 + cross-attention + DeepHit architecture for structure-aware HLA mismatch scoring and competing-risks survival prediction in allogeneic HSCT.",
     tags: ["Open Source", "Protein LM", "DeepHit"],
@@ -25,7 +25,7 @@ const papers = [
   {
     title: "Stanford iGEM — Immunocloaking",
     venue: "Stanford University",
-    year: "2024",
+    year: "2025",
     description:
       "Synthetic biology research on immunocloaking strategies. Contributed to experimental design and computational analysis as part of Stanford's iGEM team.",
     tags: ["Synthetic Biology", "iGEM", "Stanford"],
