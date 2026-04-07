@@ -7,7 +7,7 @@ const papers = [
   {
     title: "Competing-Risks Survival Analysis for Pediatric HSCT",
     venue: "2026 — in preparation",
-    year: "2025",
+    year: "2026",
     description:
       "Applying competing-risks survival analysis and ML to predict acute GvHD in 187 pediatric bone marrow transplant patients. Severe aGvHD risk plateaus by day 100 (CIF=0.214). LASSO-selected Cox model achieved omnibus significance (p=0.002).",
     tags: ["Solo-authored", "Survival Analysis", "Clinical ML"],
