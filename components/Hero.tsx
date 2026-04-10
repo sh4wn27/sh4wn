@@ -62,7 +62,7 @@ export default function Hero() {
             { label: "GitHub", href: "https://github.com/sh4wn27" },
             { label: "LinkedIn", href: "https://www.linkedin.com/in/huanxuan-li-b99ba72a5/" },
             { label: "Instagram", href: "https://www.instagram.com/sh4wn.27/" },
-            { label: "Email", href: "mailto:huanxuanli27@gmail.com" },
+            { label: "Email", href: "mailto:shawnli1028@gmail.com" },
           ].map((link) => (
             <a
               key={link.label}

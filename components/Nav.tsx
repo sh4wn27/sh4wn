@@ -49,7 +49,7 @@ export default function Nav() {
             </a>
           ))}
           <a
-            href="mailto:huanxuanli27@gmail.com"
+            href="mailto:shawnli1028@gmail.com"
             className="text-sm font-sans px-4 py-1.5 border border-border rounded-full text-foreground hover:border-accent hover:text-accent transition-colors duration-200"
           >
             Get in touch
