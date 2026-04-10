@@ -12,6 +12,7 @@ const papers = [
       "Applying competing-risks survival analysis and ML to predict acute GvHD in 187 pediatric bone marrow transplant patients. Severe aGvHD risk plateaus by day 100 (CIF=0.214). LASSO-selected Cox model achieved omnibus significance (p=0.002).",
     tags: ["Solo-authored", "Survival Analysis", "Clinical ML"],
     link: "https://github.com/sh4wn27/heta",
+    linkLabel: "View on GitHub",
   },
   {
     title: "CAPA: Computational Architecture for Predicting Alloimmunity",
@@ -21,6 +22,17 @@ const papers = [
       "Full framework paper describing the ESM-2 + cross-attention + DeepHit architecture for structure-aware HLA mismatch scoring and competing-risks survival prediction in allogeneic HSCT.",
     tags: ["Open Source", "Protein LM", "DeepHit"],
     link: "https://github.com/sh4wn27/capa",
+    linkLabel: "View on GitHub",
+  },
+  {
+    title: "Data-Driven Prediction of Metal-Organic Dissolution and Adhesion Using Machine Learning",
+    venue: "GMU Journal of Student-Scientists' Research, Vol. 7",
+    year: "2025",
+    description:
+      "Co-authored published paper applying Random Forest and SVM models trained on 71 experimentally validated interactions to predict metal ion dissolution and adhesion using molecular descriptors and environmental variables. Published in GMU's Department of Civil, Environmental, and Infrastructure Engineering.",
+    tags: ["Published", "Machine Learning", "Materials Science"],
+    link: "https://doi.org/10.13021/jssr2025.5366",
+    linkLabel: "View Paper",
   },
   {
     title: "Stanford iGEM — Immunocloaking",
@@ -30,6 +42,7 @@ const papers = [
       "Synthetic biology research on immunocloaking strategies. Contributed to experimental design and computational analysis as part of Stanford's iGEM team.",
     tags: ["Synthetic Biology", "iGEM", "Stanford"],
     link: null,
+    linkLabel: null,
   },
 ];
 
@@ -80,7 +93,7 @@ export default function Research() {
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1.5 text-sm font-sans text-foreground/60 hover:text-foreground transition-colors duration-200"
                   >
-                    View on GitHub ↗
+                    {paper.linkLabel} ↗
                   </a>
                 )}
               </div>
