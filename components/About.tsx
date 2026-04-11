@@ -4,16 +4,15 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 
 const traits = [
-  { label: "Competitive Cuber", desc: "Rubik's cube competitor" },
-  { label: "Lacrosse", desc: "Offensive midfielder" },
-  { label: "ABRSM Grade 8", desc: "Piano · teaches music" },
+  { label: "Competitive Speedcuber", desc: "Peaked Top 10 in states, Top 200 in country" },
+  { label: "Varsity Lacrosse", desc: "2-way midfielder" },
+  { label: "Professional Pianist", desc: "ABRSM certified · music instructor" },
   { label: "Youth Volunteer", desc: "AYM 501(c)(3) · camps, workshops & outreach" },
 ];
 
 const research = [
   { org: "Stanford iGEM", topic: "Immunocloaking research" },
   { org: "George Mason University", topic: "ASSIP program" },
-  { org: "Children's National Hospital", topic: "Clinical research" },
 ];
 
 const awards = [
@@ -25,13 +24,18 @@ const awards = [
   { name: "FBLA NOVA Regional 2nd Place", category: "Business" },
   { name: "ABRSM Grade 8 Piano Practical", category: "Music" },
   { name: "ABRSM Grade 5 Music Theory", category: "Music" },
+  { name: "Northern Virginia Music Spring Festival Superior Grade", category: "Music" },
 ];
 
 const activities = [
   "National Honor Society",
   "National Chinese Honor Society",
-  "V. Policy Debate",
+  "Comeptiive Robotics Club",
+  "Computer Team",
+  "Varsity Policy Debate",
+  "Varsity Lacrosse",
   "Investment Club",
+  "Future Business Leader of America"
 ];
 
 const apCourses = [
@@ -72,7 +76,7 @@ export default function About() {
             <p>
               Hey! I&apos;m a junior at TJHSST in Northern Virginia. I was born in 新丰 and
                 immigrated from China in 2019. After arriving in the U.S., I taught myself
-                English, started going to church and find a close group of friends. A the age of 13, 
+                English, started going to church and found a close group of friends. A the age of 13, 
                 I received a cord blood transplant at Children&apos;s National Hospital to treat beta-thalassemia,
                 a genetic disorder that shaped my life at a very young age. Since then, transplant
                 immunology and GvHD research haven&apos;t just been academic interests to me.
