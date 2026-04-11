@@ -70,15 +70,20 @@ export default function About() {
 
           <div className="space-y-5 font-sans text-[#666] leading-relaxed text-[15px]">
             <p>
-              I&apos;m a junior at TJ (TJHSST) in Northern Virginia. I immigrated from China,
-              taught myself English, and received a cord blood transplant as a child for
-              beta-thalassemia — which is why transplant immunology and GvHD research aren&apos;t
-              just academic for me. They&apos;re personal.
+              Hey! I&apos;m a junior at TJHSST in Northern Virginia. I was born in 新丰 and
+                immigrated from China in 2019. After arriving in the U.S., I taught myself
+                English, started going to church and find a close group of friends. A the age of 13, 
+                I received a cord blood transplant at Children&apos;s National Hospital to treat beta-thalassemia,
+                a genetic disorder that shaped my life at a very young age. Since then, transplant
+                immunology and GvHD research haven&apos;t just been academic interests to me.
+                They&apos;ve been deeply personal.
             </p>
             <p>
-              I&apos;ve conducted research at Stanford (iGEM), George Mason University (ASSIP),
-              and Children&apos;s National Hospital. CAPA is my effort to turn that lived experience
-              into something that might genuinely help the next kid in that situation.
+                I&apos;ve conducted research at Stanford through iGEM, at George Mason
+                University through ASSIP, and about to begin my senior year long research at Children&apos;s National Hospital.
+                CAPA is my effort to turn that lived experience into something that could genuinely help
+                the next child in that situation, while also contributing to the broader
+                research that improves outcomes and advances the field.
             </p>
           </div>
 

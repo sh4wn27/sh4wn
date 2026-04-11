@@ -24,10 +24,7 @@ immigrated from china, taught myself english, received a cord blood transplant f
 `02` &nbsp;**[Competing-Risks Survival Analysis](https://github.com/sh4wn27/heta)** — Pediatric HSCT Outcomes  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Solo-authored · 187 patients · LASSO Cox (p=0.002) · *preparing for arXiv*
 
-`03` &nbsp;**SkinAI** — Computer Vision Skin Analysis  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Thousands of users · solo founder · pending patent
-
-`04` &nbsp;**[Growing Up with Robotics](https://growingupwithrobotics.org)** — International 501(c)(3)  
+`03` &nbsp;**[Growing Up with Robotics](https://growingupwithrobotics.org)** — International 501(c)(3)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7,000+ students across multiple countries · executive director
 
 ---
