@@ -6,11 +6,11 @@ import { useRef } from "react";
 const skillGroups = [
   {
     label: "Languages",
-    skills: ["Python", "R", "Java", "C++"],
+    skills: ["Python", "R", "Java", "C++", "HTML", "CSS", "JavaScript", "SQL"],
   },
   {
     label: "AI / ML",
-    skills: ["PyTorch", "Machine Learning", "Computer Vision", "ESM-2 · Protein Language Models"],
+    skills: ["PyTorch", "Machine Learning", "Computer Vision", "ESM-2 · Protein Language Models", "Neural Network"],
   },
   {
     label: "Biomedical",
@@ -18,15 +18,15 @@ const skillGroups = [
   },
   {
     label: "Engineering",
-    skills: ["Robotics", "iOS Development", "Mobile App Development"],
+    skills: ["Circuits", "Wiring", "CAD", "3D Printing", "Robotics", ],
   },
   {
     label: "Music",
-    skills: ["ABRSM Grade 8 Piano", "ABRSM Grade 5 Theory"],
+    skills: ["ABRSM Grade 8 Piano", "ABRSM Grade 5 Theory", "Northern Virginia Spring Festival Ranked Superior"],
   },
   {
     label: "Business & Research",
-    skills: ["SEO", "Investment Analysis", "Research Skills"],
+    skills: ["SEO", "Investment Analysis", "iOS Development", "Mobile App Development", "Research Skills", "Data Collection", "Data Manipulation"],
   },
 ];
 
