@@ -1,1 +1,2 @@
-Personal portfolio for [sh4wn.org](https://sh4wn.org/) — built with Next.js 14, Tailwind CSS, and Framer Motion.
+https://www.sh4wn.org/
+
