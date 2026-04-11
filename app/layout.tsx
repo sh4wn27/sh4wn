@@ -19,10 +19,10 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "sh4wn",
   description:
-    "Junior at TJHSST. Building at the intersection of AI, biomedicine, and robotics. Creator of CAPA, SkinAI, and Growing Up with Robotics.",
+    "Huanxuan, also known as Shawn, is a Junior at TJHSST. Building at the intersection of AI, biomedicine, and robotics. Creator of CAPA, SkinAI, and Growing Up with Robotics.",
   openGraph: {
-    title: "Shawn Li",
-    description: "Engineer. Researcher. Builder.",
+    title: "Huanxuan Li",
+    description: "Engineer. Researcher. Builder. Leader.",
     type: "website",
   },
 };

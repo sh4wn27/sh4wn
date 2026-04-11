@@ -30,7 +30,7 @@ const awards = [
 const activities = [
   "National Honor Society",
   "National Chinese Honor Society",
-  "Comeptiive Robotics Club",
+  "Competitive Robotics Club",
   "Computer Team",
   "Varsity Policy Debate",
   "Varsity Lacrosse",
