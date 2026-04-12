@@ -39,7 +39,7 @@ export default function Hero() {
 
         {/* Main heading */}
         <motion.div variants={item} className="space-y-2">
-          <h1 className="font-display font-extrabold text-[clamp(3rem,10vw,9rem)] leading-[0.9] tracking-tighter text-foreground">
+          <h1 className="font-display font-extrabold text-[clamp(2.5rem,6.5vw,6rem)] leading-[0.9] tracking-tighter text-foreground">
             Huanxuan Li
           </h1>
           <p className="font-display font-semibold text-[clamp(1.5rem,4vw,3.5rem)] leading-tight tracking-tight text-muted">
@@ -52,7 +52,7 @@ export default function Hero() {
           variants={item}
           className="font-sans text-base md:text-lg text-muted max-w-xl leading-relaxed font-light"
         >
-          Huanxuan, also known as Shawn,is a junior at Thomas Jefferson High School for Science & Technology.
+          <span className="text-accent font-medium">Huanxuan</span>, also known as <span className="text-accent font-medium">Shawn</span>, is a junior at Thomas Jefferson High School for Science & Technology.
           Building at the intersection of AI, biomedicine, and robotics.
         </motion.p>
 
