@@ -8,7 +8,6 @@ const socials = [
   { label: "LinkedIn", href: "https://www.linkedin.com/in/huanxuan-li-b99ba72a5/", handle: "Huanxuan Li" },
   { label: "Instagram", href: "https://www.instagram.com/sh4wn.27/", handle: "@sh4wn.27" },
   { label: "Email", href: "mailto:shawnli1028@gmail.com", handle: "shawnli1028@gmail.com" },
-  { label: "Academic", href: "mailto:2027hli@tjhsst.edu", handle: "2027hli@tjhsst.edu" },
 ];
 
 export default function Contact() {
@@ -32,7 +31,7 @@ export default function Contact() {
             Research collaborations, internship inquiries, or just want to connect — reach out.
           </p>
           <a
-            href="mailto:shawnli1028@gmail.com"
+            href="mailto:shawnli028@gmail.com"
             className="inline-flex items-center gap-2 font-display font-semibold text-base text-white bg-accent rounded-full px-6 py-3 hover:opacity-90 transition-all duration-200"
           >
             Send an email ↗

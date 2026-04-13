@@ -14,6 +14,7 @@ const research = [
   { org: "Stanford iGEM", topic: "Immunocloaking research" },
   { org: "George Mason University", topic: "ASSIP program" },
   { org: "Thomas Jefferson HS for Sci & Tech", topic: "Yearlong research" },
+  { org: "ECONET's Nový PORG Investment Society", topic: "International research report" },
 ];
 
 const awards = [
