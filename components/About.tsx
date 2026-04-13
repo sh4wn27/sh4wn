@@ -13,6 +13,7 @@ const traits = [
 const research = [
   { org: "Stanford iGEM", topic: "Immunocloaking research" },
   { org: "George Mason University", topic: "ASSIP program" },
+  { org: "Thomas Jefferson HS for Sci & Tech", topic: "Yearlong research" },
 ];
 
 const awards = [
