@@ -31,7 +31,7 @@ export default function Contact() {
             Research collaborations, internship inquiries, or just want to connect — reach out.
           </p>
           <a
-            href="mailto:shawnli028@gmail.com"
+            href="mailto:shawnli1028@gmail.com"
             className="inline-flex items-center gap-2 font-display font-semibold text-base text-white bg-accent rounded-full px-6 py-3 hover:opacity-90 transition-all duration-200"
           >
             Send an email ↗
