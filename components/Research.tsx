@@ -35,14 +35,14 @@ const papers = [
     linkLabel: "View Paper",
   },
   {
-    title: "Stanford iGEM — Immunocloaking",
+    title: "Modeling the equity impact of partial HLA mismatch tolerance via biodegradable stealth-polymer coatings: A population-genetics simulation",
     venue: "Stanford University",
     year: "2025",
     description:
-      "Synthetic biology research on immunocloaking strategies. Contributed to experimental design and computational analysis as part of Stanford's iGEM team.",
-    tags: ["Synthetic Biology", "iGEM", "Stanford"],
-    link: null,
-    linkLabel: null,
+      "Bioengienering and computationl simulation research on immunocloaking strategies. Contributed to experimental design and computational analysis as part of Stanford's iGEM team.",
+    tags: ["Synthetic Biology", "Bioengineering", "Computataionl Simulation"],
+    link: "https://github.com/sh4wn27/immu",
+    linkLabel: "View on GitHub",
   },
 ];
 
