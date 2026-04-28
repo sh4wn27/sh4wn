@@ -47,7 +47,7 @@ const projects = [
         { label: "GitHub", href: "https://github.com/sh4wn27/skinai" },
         { label: "Website", href: "https://skinai-silk.vercel.app/" },
       ],
-    gradient: "from-[#f5dcd8] via-[#f0c8c0] to-[#e8a8a0]",
+    gradient: "from-[#dce8f5] via-[#c8daf0] to-[#a8c4e8]",
     image: "/images/03.jpg",
   },
   {
@@ -85,7 +85,7 @@ const projects = [
     description:
       "Chapter management mobile app built for FBLA. 2nd place NOVA Regional in Mobile App Development. Full-stack with React Native and AWS backend.",
     stack: "React Native · AWS · TypeScript",
-    status: "2nd Place NOVA Regional",
+    status: "2nd Place NOVA Regional and Actively Operating",
     links: [
       { label: "Website", href: "https://fblafuse.com/" },
       { label: "GitHub", href: "https://github.com/ytouri/fbla-fuse" },
