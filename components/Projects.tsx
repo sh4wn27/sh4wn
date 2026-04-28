@@ -42,7 +42,7 @@ const projects = [
     description:
       "AI-powered skin analysis platform with thousands of users and a pending patent. Uses computer vision for dermatological screening. Built from the ground up as a solo founder.",
     stack: "Computer Vision · Python · React",
-    status: "Operating",
+    status: "Actively Operating",
     links: [
         { label: "GitHub", href: "https://github.com/sh4wn27/skinai" },
         { label: "Website", href: "https://skinai-silk.vercel.app/" },
@@ -118,7 +118,7 @@ function ProjectCard({ project, index }: { project: (typeof projects)[0]; index:
           onError={(e) => { (e.target as HTMLImageElement).style.display = "none"; }}
         />
         {/* Number watermark */}
-        <div className={`absolute bottom-3 left-5 text-[5rem] font-display font-black leading-none select-none pointer-events-none ${project.number === "03" || project.number === "05" ? "text-white/60" : "text-black/8"}`}>
+        <div className={`absolute bottom-3 left-5 text-[5rem] font-display font-black leading-none select-none pointer-events-none ${project.number === "05" ? "text-white/60" : "text-black/8"}`}>
           {project.number}
         </div>
         {project.status && (
