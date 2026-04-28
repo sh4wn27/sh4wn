@@ -40,7 +40,7 @@ const papers = [
     year: "2025",
     description:
       "Bioengienering and computationl simulation research on immunocloaking strategies. Contributed to experimental design and computational analysis as part of Stanford's iGEM team.",
-    tags: ["Synthetic Biology", "Bioengineering", "Computataionl Simulation"],
+    tags: ["Synthetic Biology", "Bioengineering", "Computational Simulation"],
     link: "https://github.com/sh4wn27/immu",
     linkLabel: "View on GitHub",
   },

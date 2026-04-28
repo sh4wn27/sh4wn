@@ -16,7 +16,7 @@ const projects = [
     status: "Active — pending patent",
     links: [
       { label: "GitHub", href: "https://github.com/sh4wn27/capa" },
-      { label: "Live Demo", href: "https://capa-rho.vercel.app/about" },
+      { label: "Website", href: "https://capa-rho.vercel.app/about" },
     ],
     gradient: "from-[#dce8f5] via-[#c8daf0] to-[#a8c4e8]",
     image: "/images/01.jpg",
@@ -36,14 +36,17 @@ const projects = [
   },
   {
     number: "03",
-    title: "SkinAI",
+    title: "SKINAI",
     subtitle: "Computer Vision Skin Analysis Platform",
     tags: ["AI/ML", "Computer Vision", "Startup"],
     description:
       "AI-powered skin analysis platform with thousands of users and a pending patent. Uses computer vision for dermatological screening. Built from the ground up as a solo founder.",
     stack: "Computer Vision · Python · React",
-    status: "Pending patent",
-    links: [],
+    status: "Operating",
+    links: [
+        { label: "GitHub", href: "https://github.com/sh4wn27/skinai" },
+        { label: "Website", href: "https://skinai-silk.vercel.app/" },
+      ],
     gradient: "from-[#f5dcd8] via-[#f0c8c0] to-[#e8a8a0]",
     image: "/images/03.jpg",
   },
