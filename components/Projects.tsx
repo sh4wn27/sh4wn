@@ -23,19 +23,6 @@ const projects = [
   },
   {
     number: "02",
-    title: "Competing-Risks Survival Analysis",
-    subtitle: "Pediatric HSCT Outcomes Research",
-    tags: ["Biostatistics", "Research Paper", "Survival Analysis"],
-    description:
-      "Solo-authored research applying competing-risks survival analysis and ML to predict acute GvHD in 187 pediatric bone marrow transplant patients. Severe aGvHD risk plateaus by day 100 (CIF=0.214). LASSO-selected Cox model achieved omnibus significance (p=0.002).",
-    stack: "R · Python · lifelines · LASSO Cox",
-    status: "Preparing for arXiv",
-    links: [{ label: "GitHub", href: "https://github.com/sh4wn27/heta" }],
-    gradient: "from-[#d5ead5] via-[#c0dcc0] to-[#a0cca0]",
-    image: "/images/02.jpg",
-  },
-  {
-    number: "03",
     title: "SKINAI",
     subtitle: "Computer Vision Skin Analysis Platform",
     tags: ["AI/ML", "Computer Vision", "Startup"],
@@ -44,41 +31,14 @@ const projects = [
     stack: "Computer Vision · Python · React",
     status: "Actively Operating",
     links: [
-        { label: "GitHub", href: "https://github.com/sh4wn27/skinai" },
-        { label: "Website", href: "https://skinai-silk.vercel.app/" },
-      ],
+      { label: "GitHub", href: "https://github.com/sh4wn27/skinai" },
+      { label: "Website", href: "https://skinai-silk.vercel.app/" },
+    ],
     gradient: "from-[#dce8f5] via-[#c8daf0] to-[#a8c4e8]",
     image: "/images/03.jpg",
   },
   {
-    number: "04",
-    title: "Growing Up with Robotics",
-    subtitle: "International 501(c)(3) Nonprofit",
-    tags: ["Nonprofit", "STEM Education", "Leadership"],
-    description:
-      "International nonprofit I founded. Robotics and STEM education for underserved communities. 7,000+ students reached across multiple countries. Executive Director.",
-    stack: "501(c)(3) · 300+ service hours · 7,000+ students",
-    status: "Active",
-    links: [{ label: "Website", href: "https://growingupwithrobotics.org" }],
-    gradient: "from-[#e0d8f0] via-[#d0c8e8] to-[#b8a8d8]",
-    image: "/images/04.jpg",
-  },
-  {
-    number: "05",
-    title: "FTC Robotics — Team 14607",
-    subtitle: "Robot Uprising · Team Captain",
-    tags: ["Competitive Robotics", "Engineering", "Captain"],
-    description:
-      "Team captain for Robot Uprising. Competed at FTC Chesapeake Championship. Led mechanical design and autonomous programming. Drove strategy and systems integration.",
-    stack: "Java · CAD · FTC SDK",
-    status: "Chesapeake Championship",
-    links: [{ label: "Website", href: "https://www.robotuprising.org/" }],
-    gradient: "from-[#f0ead5] via-[#e8e0c0] to-[#d8d0a0]",
-    image: "/images/05.jpg",
-    imagePosition: "object-[center_25%]",
-  },
-  {
-    number: "06",
+    number: "03",
     title: "FBLA FUSE",
     subtitle: "Chapter Management Mobile App",
     tags: ["Mobile App", "Full Stack", "Competition"],
@@ -92,6 +52,46 @@ const projects = [
     ],
     gradient: "from-[#d8ecea] via-[#c0e0dc] to-[#a0d0cc]",
     image: "/images/06.jpg",
+  },
+  {
+    number: "04",
+    title: "FTC 14607 Robot Uprising",
+    subtitle: "Robot Uprising · Team Captain",
+    tags: ["Competitive Robotics", "Engineering", "Captain"],
+    description:
+      "Team captain for Robot Uprising. Competed at FTC Chesapeake Championship. Led mechanical design and autonomous programming. Drove strategy and systems integration.",
+    stack: "Java · CAD · FTC SDK",
+    status: "Chesapeake Championship",
+    links: [{ label: "Website", href: "https://www.robotuprising.org/" }],
+    gradient: "from-[#f0ead5] via-[#e8e0c0] to-[#d8d0a0]",
+    image: "/images/05.jpg",
+    imagePosition: "object-[center_25%]",
+  },
+  {
+    number: "05",
+    title: "Growing Up with Robotics",
+    subtitle: "International 501(c)(3) Nonprofit",
+    tags: ["Nonprofit", "STEM Education", "Leadership"],
+    description:
+      "International nonprofit I founded. Robotics and STEM education for underserved communities. 7,000+ students reached across multiple countries. Executive Director.",
+    stack: "501(c)(3) · 300+ service hours · 7,000+ students",
+    status: "Active",
+    links: [{ label: "Website", href: "https://growingupwithrobotics.org" }],
+    gradient: "from-[#e0d8f0] via-[#d0c8e8] to-[#b8a8d8]",
+    image: "/images/04.jpg",
+  },
+  {
+    number: "06",
+    title: "Area Youth Ministry",
+    subtitle: "Summer Camp Director / Volunteer / Mentor",
+    tags: ["Volunteer", "STEM Education", "Community"],
+    description:
+      "Spearheaded a week-long robotics camp in collaboration with FTC Team 14607 Robot Uprising. Taught CAD, programming, electronics, and LEGO Spike builds to 50+ students. Managed 20+ volunteers and led all cross-org communication, and hosted many events throughout the year.",
+    stack: "Python · CAD · LEGO Spike · FTC SDK",
+    status: "Active",
+    links: [{ label: "Website", href: "https://www.areayouth.org/" }],
+    gradient: "from-[#f5e8dc] via-[#f0d8c0] to-[#e8c4a0]",
+    image: "/images/07.jpg",
   },
 ];
 
@@ -198,11 +198,11 @@ export default function Projects() {
         <div>
           <p className="text-xs font-sans text-accent tracking-widest uppercase mb-3 font-medium">Selected Work</p>
           <h2 className="font-display font-extrabold text-[clamp(2.5rem,6vw,5rem)] leading-[0.95] tracking-tighter text-foreground">
-            Projects &<br />Research
+            Projects &<br />Services
           </h2>
         </div>
         <p className="font-sans text-sm text-muted max-w-xs leading-relaxed">
-          Six projects across ML research, computer vision, nonprofits, and competitive engineering.
+          Six projects and services across ML, computer vision, competitive robotics, and community outreach.
         </p>
       </motion.div>
 
