@@ -1,6 +1,7 @@
 "use client";
 
 import { motion, useInView } from "framer-motion";
+import { label } from "framer-motion/client";
 import { useRef } from "react";
 
 const papers = [
@@ -11,8 +12,10 @@ const papers = [
     description:
       "Applying competing-risks survival analysis and ML to predict acute GvHD in 187 pediatric bone marrow transplant patients. Severe aGvHD risk plateaus by day 100 (CIF=0.214). LASSO-selected Cox model achieved omnibus significance (p=0.002).",
     tags: ["Solo-authored", "Survival Analysis", "Clinical ML"],
-    link: "https://github.com/sh4wn27/heta",
-    linkLabel: "View on GitHub",
+    links: [
+      { label: "GitHub", href: "https://github.com/sh4wn27/heta" },
+      { label: "Manuscript", href: "https://drive.google.com/file/d/1MQhRy7LX42KLS2_HnTzwhiD4NC2OXHLt/view?usp=sharing" },
+    ],
   },
   {
     title: "CAPA: Computational Architecture for Predicting Alloimmunity",
@@ -21,8 +24,10 @@ const papers = [
     description:
       "Full framework paper describing the ESM-2 + cross-attention + DeepHit architecture for structure-aware HLA mismatch scoring and competing-risks survival prediction in allogeneic HSCT.",
     tags: ["Open Source", "Protein LM", "DeepHit"],
-    link: "https://github.com/sh4wn27/capa",
-    linkLabel: "View on GitHub",
+    links: [
+      { label: "GitHub", href: "https://github.com/sh4wn27/capa" },
+      { label: "Manuscript", href: "https://drive.google.com/file/d/1_K7GRsndbUGzUCgfpq1QsB9K-7nV0Ei1/view?usp=sharing" },
+    ],
   },
   {
     title: "Data-Driven Prediction of Metal-Organic Dissolution and Adhesion Using Machine Learning",
@@ -31,8 +36,21 @@ const papers = [
     description:
       "Co-authored published paper applying Random Forest and SVM models trained on 71 experimentally validated interactions to predict metal ion dissolution and adhesion using molecular descriptors and environmental variables. Published in GMU's Department of Civil, Environmental, and Infrastructure Engineering.",
     tags: ["Published", "Machine Learning", "Materials Science"],
-    link: "https://doi.org/10.13021/jssr2025.5366",
-    linkLabel: "View Paper",
+    links: [
+      { label: "DOI", href: "https://doi.org/10.13021/jssr2025.5366" },
+    ],
+  },
+  {
+    title: "Predicting Energy Consumption in CPU-Based Deep Learning Training: A Log-Linear Regression Analysis of the BUTTER-E Dataset",
+    venue: "Thomas Jefferson High School for Science and Technology — Student Research Project",
+    year: "2025",
+    description:
+      "Fit a log-linear multiple regression model to 96 CPU deep learning training runs from the BUTTER-E dataset, identifying instantaneous power draw and active compute time as the dominant predictors of energy consumption (adj. R² = 0.9989). Found that model size and network depth contribute no detectable effect on CPU hardware, with practical implications for energy-efficient AI in resource-constrained environments.",
+    tags: ["Green AI", "Machine Learning", "Statistics"],
+    links: [
+      { label: "GitHub", href: "https://github.com/sh4wn27/energyModel" },
+      { label: "Manuscript", href: "https://drive.google.com/file/d/1MQhRy7LX42KLS2_HnTzwhiD4NC2OXHLt/view?usp=sharing" },
+    ],
   },
   {
     title: "Modeling the equity impact of partial HLA mismatch tolerance via biodegradable stealth-polymer coatings: A population-genetics simulation",
@@ -41,8 +59,10 @@ const papers = [
     description:
       "Bioengienering and computationl simulation research on immunocloaking strategies. Contributed to experimental design and computational analysis as part of Stanford's iGEM team.",
     tags: ["Synthetic Biology", "Bioengineering", "Computational Simulation"],
-    link: "https://github.com/sh4wn27/immu",
-    linkLabel: "View on GitHub",
+    links: [
+      { label: "GitHub", href: "https://github.com/sh4wn27/immu" },
+      { label: "Manuscript", href: "https://drive.google.com/file/d/1geVaNpjcs4MVXzopqdzW3WCpm62E17bB/view?usp=sharing" },
+    ],
   },
 ];
 
