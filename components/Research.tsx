@@ -1,7 +1,6 @@
 "use client";
 
 import { motion, useInView } from "framer-motion";
-import { label } from "framer-motion/client";
 import { useRef } from "react";
 
 const papers = [
@@ -14,7 +13,7 @@ const papers = [
     tags: ["Solo-authored", "Survival Analysis", "Clinical ML"],
     links: [
       { label: "GitHub", href: "https://github.com/sh4wn27/heta" },
-      { label: "Manuscript", href: "https://drive.google.com/file/d/1MQhRy7LX42KLS2_HnTzwhiD4NC2OXHLt/view?usp=sharing" },
+      { label: "Manuscript", href: "https://drive.google.com/file/d/1fkfP2FvaFQnIBkswdhD0Kdv_UEYWoQde/view?usp=sharing" },
     ],
   },
   {
@@ -106,15 +105,20 @@ export default function Research() {
                   {paper.title}
                 </h3>
                 <p className="font-sans text-sm text-[#666] leading-relaxed">{paper.description}</p>
-                {paper.link && (
-                  <a
-                    href={paper.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1.5 text-sm font-sans text-foreground/60 hover:text-foreground transition-colors duration-200"
-                  >
-                    {paper.linkLabel} ↗
-                  </a>
+                {paper.links && (
+                  <div className="flex flex-wrap gap-3">
+                    {paper.links.map((link) => (
+                      <a
+                        key={link.href}
+                        href={link.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1.5 text-sm font-sans text-foreground/60 hover:text-foreground transition-colors duration-200"
+                      >
+                        {link.label} ↗
+                      </a>
+                    ))}
+                  </div>
                 )}
               </div>
               <div className="flex md:flex-col items-center md:items-end gap-3 md:gap-2 shrink-0">
