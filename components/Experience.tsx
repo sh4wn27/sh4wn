@@ -9,6 +9,7 @@ const experiences = [
     org: "Children's National Hospital, Precision Medical Lab, Division of AI Research",
     location: "Washington, D.C.",
     period: "July 2026 – Present",
+    type: "Research",
     description:
       "Year-long research position in AI applications for precision medicine.",
   },
@@ -17,6 +18,7 @@ const experiences = [
     org: "Virginia Tech",
     location: "Blacksburg, VA",
     period: "June 2026",
+    type: "Scholar",
     description:
       "Senior track of the Pathways to Future Engineer program. Selected cohort for intensive engineering coursework and research exposure.",
   },
@@ -25,6 +27,7 @@ const experiences = [
     org: "Stanford University, iGEM",
     location: "Stanford, CA",
     period: "2025",
+    type: "Research",
     description:
       "Contributed to the immunocloaking project modeling biodegradable stealth-polymer coatings for partial HLA mismatch tolerance. Co-authored manuscript on population-genetics simulation of equity impact.",
   },
@@ -33,6 +36,7 @@ const experiences = [
     org: "George Mason University",
     location: "Fairfax, VA",
     period: "2025",
+    type: "Research",
     description:
       "Aspiring Scientists Summer Internship Program. Built ML models (Random Forest, SVM) for predicting metal-organic dissolution and adhesion. Co-authored paper published in GMU JSSR Vol. 7.",
   },
@@ -41,20 +45,25 @@ const experiences = [
     org: "Growing Up with Robotics",
     location: "International · 501(c)(3)",
     period: "2022 – Present",
+    type: "Nonprofit",
     description:
       "Founded and lead an international nonprofit delivering robotics and STEM education to underserved communities. 7,000+ students reached, $34K+ raised, 300+ service hours.",
   },
   {
     role: "Founder & Executive Developer",
     org: "CAPA",
+    location: "Remote",
     period: "2025 – Present",
+    type: "Personal Project",
     description:
       "Solo-built open-source ML framework for HSCT outcome prediction. Pending patent. Architecture, deployment (FastAPI/Modal + Next.js/Vercel), and manuscript targeting peer-reviewed submission.",
   },
   {
     role: "Founder & Executive Developer",
     org: "SKINAI",
+    location: "Remote",
     period: "2024 – Present",
+    type: "Personal Project",
     description:
       "Solo founder of a computer-vision dermatological screening platform. Thousands of users, pending patent. Built dermatologist referral network from scratch.",
   },
@@ -63,6 +72,7 @@ const experiences = [
     org: "FTC Team 14607 Robot Uprising",
     location: "Alexandria, VA",
     period: "2024 – Present",
+    type: "Robotics",
     description:
       "Captain of competitive FTC team. Led mechanical design, autonomous programming, and strategy through Chesapeake Championship. Multiple FIRST awards (Inspire II ×2, Motivate, Connect).",
   },
@@ -71,6 +81,7 @@ const experiences = [
     org: "Area Youth Ministry",
     location: "Fairfax, VA",
     period: "Summer 2025 – Present",
+    type: "Volunteer",
     description:
       "Directed a week-long robotics camp serving 50+ students in partnership with FTC 14607. Managed 20+ volunteers. Continuing year-round mentorship and event leadership.",
   },
@@ -79,18 +90,21 @@ const experiences = [
     org: "Tea-Do Fairfax",
     location: "Fairfax, VA",
     period: "2025 – Present",
+    type: "Part Time Job",
     description:
       "Handle drink production and cross-team communication in a fast-paced service environment.",
   },
 ];
 
-const typeColors: Record<string, string> = {
-  Research: "bg-[#dce8f5] text-[#3a6d9c] border-[#b8d0e8]",
-  Scholar:  "bg-[#d8ecea] text-[#2e6b5e] border-[#a8d8c8]",
-  Startup:  "bg-[#d8f0e8] text-[#2e7a57] border-[#a8d8c0]",
-  Nonprofit:"bg-[#e8d8f0] text-[#6b3fa0] border-[#c8a8e0]",
-  Robotics: "bg-[#f0ead5] text-[#7a6b2e] border-[#d8d0a0]",
-  Volunteer:"bg-[#f5ead8] text-[#9c6b2e] border-[#e0c8a0]",
+// bg, text color — all drawn from the pink→red→purple spectrum
+const typeStyles: Record<string, { bg: string; color: string }> = {
+  Research:         { bg: "rgba(232, 84, 122, 0.12)", color: "#c93060" },
+  Scholar:          { bg: "rgba(220, 60, 100, 0.12)", color: "#b82858" },
+  Nonprofit:        { bg: "rgba(180, 50, 130, 0.12)", color: "#a0306e" },
+  "Personal Project":{ bg: "rgba(200, 60, 110, 0.12)", color: "#b02860" },
+  Robotics:         { bg: "rgba(160, 40, 140, 0.12)", color: "#8c2870" },
+  Volunteer:        { bg: "rgba(140, 30, 150, 0.12)", color: "#7a2078" },
+  "Part Time Job":  { bg: "rgba(120, 20, 160, 0.12)", color: "#681880" },
 };
 
 function ExperienceRow({
@@ -118,7 +132,12 @@ function ExperienceRow({
       {/* Left: meta */}
       <div className="flex md:flex-col gap-3 md:gap-2 flex-wrap md:pt-0.5">
         <span
-          className={`inline-block text-xs font-sans px-2.5 py-0.5 rounded-full border w-fit ${typeColors[exp.type] ?? "bg-card border-border text-muted"}`}
+          className="inline-block text-xs font-sans px-2.5 py-0.5 rounded-full w-fit font-medium"
+          style={{
+            background: typeStyles[exp.type]?.bg ?? "rgba(232,84,122,0.10)",
+            color: typeStyles[exp.type]?.color ?? "#c93060",
+            border: `1px solid ${typeStyles[exp.type]?.color ?? "#c93060"}30`,
+          }}
         >
           {exp.type}
         </span>
