@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="space-y-1">
           <p className="font-display font-bold text-sm text-foreground">sh4wn</p>
           <p className="font-sans text-xs text-muted">
-            Shawn Li · TJHSST · Northern Virginia
+            TJHSST · Northern Virginia
           </p>
         </div>
 
@@ -30,7 +30,7 @@ export default function Footer() {
           ))}
         </div>
 
-        <p className="font-sans text-xs text-muted">© {year} Shawn Li</p>
+        <p className="font-sans text-xs text-muted">© 2026 sh4wn.org</p>
       </div>
     </footer>
   );
