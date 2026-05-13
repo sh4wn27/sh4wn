@@ -6,19 +6,17 @@ import { useRef } from "react";
 const experiences = [
   {
     role: "Research Intern",
-    org: "Children's National Hospital, CPMGR",
+    org: "Children's National Hospital, Precision Medical Lab, Division of AI Research",
     location: "Washington, D.C.",
     period: "July 2026 – Present",
-    type: "Research",
     description:
-      "Year-long research appointment at the Center for Pediatric Mitochondrial Genetics & Rare Diseases. Focus: transplant immunology and outcome prediction in pediatric HSCT.",
+      "Year-long research position in AI applications for precision medicine.",
   },
   {
     role: "Engineering Pathways Scholar",
     org: "Virginia Tech",
     location: "Blacksburg, VA",
     period: "June 2026",
-    type: "Scholar",
     description:
       "Senior track of the Pathways to Future Engineer program. Selected cohort for intensive engineering coursework and research exposure.",
   },
@@ -27,7 +25,6 @@ const experiences = [
     org: "Stanford University, iGEM",
     location: "Stanford, CA",
     period: "2025",
-    type: "Research",
     description:
       "Contributed to the immunocloaking project modeling biodegradable stealth-polymer coatings for partial HLA mismatch tolerance. Co-authored manuscript on population-genetics simulation of equity impact.",
   },
@@ -36,7 +33,6 @@ const experiences = [
     org: "George Mason University",
     location: "Fairfax, VA",
     period: "2025",
-    type: "Research",
     description:
       "Aspiring Scientists Summer Internship Program. Built ML models (Random Forest, SVM) for predicting metal-organic dissolution and adhesion. Co-authored paper published in GMU JSSR Vol. 7.",
   },
@@ -45,45 +41,46 @@ const experiences = [
     org: "Growing Up with Robotics",
     location: "International · 501(c)(3)",
     period: "2022 – Present",
-    type: "Nonprofit",
     description:
       "Founded and lead an international nonprofit delivering robotics and STEM education to underserved communities. 7,000+ students reached, $34K+ raised, 300+ service hours.",
   },
   {
-    role: "Founder",
+    role: "Founder & Executive Developer",
     org: "CAPA",
-    location: "Remote",
     period: "2025 – Present",
-    type: "Startup",
     description:
       "Solo-built open-source ML framework for HSCT outcome prediction. Pending patent. Architecture, deployment (FastAPI/Modal + Next.js/Vercel), and manuscript targeting peer-reviewed submission.",
   },
   {
-    role: "Founder",
-    org: "SkinAI",
-    location: "Remote",
+    role: "Founder & Executive Developer",
+    org: "SKINAI",
     period: "2024 – Present",
-    type: "Startup",
     description:
       "Solo founder of a computer-vision dermatological screening platform. Thousands of users, pending patent. Built dermatologist referral network from scratch.",
   },
   {
     role: "Team Captain",
     org: "FTC Team 14607 Robot Uprising",
-    location: "Thomas Jefferson HSST",
+    location: "Alexandria, VA",
     period: "2024 – Present",
-    type: "Robotics",
     description:
       "Captain of competitive FTC team. Led mechanical design, autonomous programming, and strategy through Chesapeake Championship. Multiple FIRST awards (Inspire II ×2, Motivate, Connect).",
   },
   {
-    role: "Summer Camp Director & Student Mentor",
+    role: "Summer Camp Director & Volunteer",
     org: "Area Youth Ministry",
-    location: "Northern Virginia",
+    location: "Fairfax, VA",
     period: "Summer 2025 – Present",
-    type: "Volunteer",
     description:
       "Directed a week-long robotics camp serving 50+ students in partnership with FTC 14607. Managed 20+ volunteers. Continuing year-round mentorship and event leadership.",
+  },
+  {
+    role: "Barista",
+    org: "Tea-Do Fairfax",
+    location: "Fairfax, VA",
+    period: "2025 – Present",
+    description:
+      "Handle drink production and cross-team communication in a fast-paced service environment.",
   },
 ];
 
