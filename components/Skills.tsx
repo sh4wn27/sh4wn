@@ -35,7 +35,7 @@ export default function Skills() {
   const inView = useInView(ref, { once: true, margin: "-80px" });
 
   return (
-    <section ref={ref} className="px-6 md:px-12 py-28 max-w-7xl mx-auto">
+    <section ref={ref} id="skills" className="px-6 md:px-12 py-28 max-w-7xl mx-auto">
       <div className="grid grid-cols-1 lg:grid-cols-[1fr_2fr] gap-16 items-start">
         {/* Left: heading */}
         <motion.div
