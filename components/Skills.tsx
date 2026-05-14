@@ -2,14 +2,9 @@
 
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-
 const skillGroups = [
   {
-    label: "Languages",
-    skills: ["Python", "C++", "C", "Java", "TypeScript", "JavaScript", "R", "SQL", "Bash", "HTML", "CSS"],
-  },
-  {
-    label: "AI / ML",
+    label: "AI / ML & Statistics",
     skills: [
       "PyTorch",
       "TensorFlow",
@@ -20,31 +15,31 @@ const skillGroups = [
       "ONNX",
       "Reinforcement Learning",
       "Survival Analysis",
-      "ESM-2 · Protein Language Models",
-      "LLM Application Development",
-      "Ollama",
+      "Competing Risks",
+      "Statistical Modeling",
+      "ESM-2 · Protein LLM",
     ],
   },
   {
-    label: "Biomedical",
+    label: "Biomedical & Research",
     skills: [
       "Immunology",
       "Immunogenomics",
       "HLA Typing",
       "HSCT Outcome Modeling",
-      "Competing Risks Analysis",
       "Bioinformatics",
+      "Research Methods",
+      "Scientific Writing",
     ],
   },
   {
-    label: "Engineering",
+    label: "Engineering & Hardware",
     skills: [
       "CAD",
       "3D Printing",
       "Robotics",
       "Circuits",
       "PCB Design",
-      "Soldering",
       "Embedded Systems",
       "Raspberry Pi",
       "BLDC Motor Control",
@@ -52,48 +47,37 @@ const skillGroups = [
     ],
   },
   {
+    label: "Leadership & Music",
+    skills: [
+      "Nonprofit Management",
+      "Curriculum Design",
+      "Event Operations",
+      "Public Speaking",
+      "Mentoring",
+      "ABRSM Grade 8 Piano",
+      "ABRSM Grade 5 Theory",
+      "Music Instruction",
+      "English · Mandarin",
+    ],
+  },
+  {
     label: "Web & Software",
     skills: [
       "React",
       "Next.js",
+      "TypeScript",
       "Tailwind CSS",
       "Framer Motion",
       "FastAPI",
       "Git",
-      "Vercel",
-      "DNS / Route 53",
       "iOS Development",
     ],
   },
   {
-    label: "Music",
-    skills: ["ABRSM Grade 8 Piano", "ABRSM Grade 5 Theory", "Music Instruction"],
+    label: "Programming Languages",
+    skills: ["Python", "C++", "C", "Java", "JavaScript", "R", "SQL", "Bash"],
   },
-  {
-    label: "Leadership & Outreach",
-    skills: [
-      "Nonprofit Management",
-      "Curriculum Design",
-      "Public Speaking",
-      "Mentoring",
-      "Team Leadership",
-    ],
-  },
-  {
-    label: "Business & Research",
-    skills: [
-      "Scientific Writing",
-      "Research Methods",
-      "Data Collection",
-      "Data Analysis",
-      "SEO",
-      "Investment Analysis",
-    ],
-  },
-  {
-    label: "Spoken Languages",
-    skills: ["English", "Mandarin"],
-  },
+
 ];
 
 export default function Skills() {
