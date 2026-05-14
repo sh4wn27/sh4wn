@@ -25,7 +25,7 @@ export default function Contact() {
         >
           <p className="text-xs font-sans text-accent tracking-widest uppercase font-medium">Contact</p>
           <h2 className="font-display font-extrabold text-[clamp(2.5rem,6vw,5rem)] leading-[0.95] tracking-tighter text-foreground">
-            Let&apos;s talk<br />about ideas.
+            Reach out!
           </h2>
           <p className="font-sans text-[15px] text-[#666] leading-relaxed max-w-sm">
             Research collaborations, internship inquiries, or just want to connect — reach out.

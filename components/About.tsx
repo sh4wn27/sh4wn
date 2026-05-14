@@ -11,6 +11,7 @@ const traits = [
 ];
 
 const research = [
+  { org: "Children's National Hospital", topic: "Precision Medicine research" },
   { org: "Stanford iGEM", topic: "Immunocloaking research" },
   { org: "George Mason University", topic: "ASSIP program" },
   { org: "Thomas Jefferson HS for Sci & Tech", topic: "Yearlong research" },
@@ -41,13 +42,15 @@ const activities = [
 ];
 
 const apCourses = [
-  "AP Chinese", "AP CS A+", "AP Statistics", "AP US History",
-  "AP Precalculus BC", "AP Physics 1", "AP Microeconomics", "AP Macroeconomics",
+  "AP Chinese", "AP CS A+", "AP Statistics", "AP US History", "AP Human Geography",
+  "AP Precalculus BC", "AP Physics 1", "AP Microeconomics", "AP Macroeconomics", 
+  "AP Calculus BC", "AP Physics 2", "AP Physics C", "AP English Language & Composition",
+  "AP United States Government & Politics",
 ];
 
 const avCourses = [
   "AV Computer Vision", "AV Artificial Intelligence",
-  "AV Mobile App Dev", "AV Web App Dev", "AV Statistics",
+  "AV Mobile App Dev", "AV Web App Dev", "AV Statistics", "AV Research",
 ];
 
 export default function About() {
