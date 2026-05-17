@@ -9,6 +9,11 @@ const TWEAKS_DEFAULTS = /*EDITMODE-BEGIN*/{
 function App() {
   const [t, setTweak] = useTweaks(TWEAKS_DEFAULTS);
   const [easter, setEaster] = React.useState(null);
+  const [mobileNotice, setMobileNotice] = React.useState(false);
+
+  React.useEffect(() => {
+    if (window.innerWidth < 768) setMobileNotice(true);
+  }, []);
 
   React.useEffect(() => {
     document.documentElement.style.setProperty('--accent', t.accent);
@@ -651,6 +656,7 @@ function App() {
         </footer>
       </main>
 
+      {mobileNotice && <MobileNotice onClose={() => setMobileNotice(false)} />}
       {easter && <EasterEgg kind={easter} onClose={() => setEaster(null)} />}
 
       <TweaksPanel title="Tweaks">
@@ -1007,6 +1013,31 @@ function VerseEgg() {
 // ============================================================
 // Easter eggs — expanded
 // ============================================================
+function MobileNotice({ onClose }) {
+  return (
+    <div className="easter" onClick={onClose}>
+      <div className="box" onClick={(e) => e.stopPropagation()}>
+        <span className="x" onClick={onClose}>dismiss</span>
+        <h3>~ mobile detected</h3>
+        <pre>
+{`device: `}<span className="k">mobile / tablet</span>{`
+status: `}<span className="a">limited experience</span>{`
+
+hey — looks like you're on a smaller screen.
+this site was built for desktop, so some
+things might feel a little off here.
+
+for the full experience:
+  → open on a laptop or desktop
+  → or rotate to landscape
+
+`}<span className="k">— sh4wn</span>
+        </pre>
+      </div>
+    </div>
+  );
+}
+
 function EasterEgg({ kind, onClose }) {
   const content = {
     whoami: (
