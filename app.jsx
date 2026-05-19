@@ -497,7 +497,7 @@ function App() {
               venue="2026 — in preparation"
               links={[
                 ['GitHub', 'https://github.com/sh4wn27/heta'],
-                ['Manuscript', 'https://drive.google.com/file/d/1fkfP2FvaFQnIBkswdhD0Kdv_UEYWoQde/view?usp=sharing'],
+                ['Manuscript', 'https://drive.google.com/file/d/1xltdu7sprKRQJcom9y0wyQmL4Eo-f5uR/view?usp=sharing'],
               ]}
             />
             <ResEntry
@@ -509,7 +509,7 @@ function App() {
               venue="Targeting Bioinformatics / Blood Advances"
               links={[
                 ['GitHub', 'https://github.com/sh4wn27/capa'],
-                ['Manuscript', 'https://drive.google.com/file/d/1_K7GRsndbUGzUCgfpq1QsB9K-7nV0Ei1/view?usp=sharing'],
+                ['Manuscript', 'https://drive.google.com/file/d/13JQvMxsVlJyQcmAZfRYSnK6WvZSuaFcp/view?usp=sharing'],
               ]}
             />
             <ResEntry
@@ -530,7 +530,7 @@ function App() {
               venue="TJHSST Student Research Project"
               links={[
                 ['GitHub', 'https://github.com/sh4wn27/energyModel'],
-                ['Manuscript', 'https://drive.google.com/file/d/1MQhRy7LX42KLS2_HnTzwhiD4NC2OXHLt/view?usp=sharing'],
+                ['Manuscript', 'https://drive.google.com/file/d/1HY83NAaMzNLu3hkqepcvzbVWgU4XeW-u/view?usp=sharing'],
               ]}
             />
             <ResEntry
@@ -542,7 +542,7 @@ function App() {
               venue="Stanford University · iGEM"
               links={[
                 ['GitHub', 'https://github.com/sh4wn27/immu'],
-                ['Manuscript', 'https://drive.google.com/file/d/1geVaNpjcs4MVXzopqdzW3WCpm62E17bB/view?usp=sharing'],
+                ['Manuscript', 'https://drive.google.com/file/d/1Xm63MaEV45vK7lB_4ddzmuBzNAioNxx2/view?usp=sharing'],
               ]}
             />
           </div>
