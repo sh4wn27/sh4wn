@@ -99,6 +99,18 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
   color: var(--ink); transition: 160ms;
 }
 .nav-cta:hover { border-color: var(--accent); color: var(--accent); }
+.nav-resume { color: var(--accent); border-color: color-mix(in oklab, var(--accent) 35%, transparent); }
+.nav-resume:hover { background: color-mix(in oklab, var(--accent) 8%, transparent); }
+
+.resume-btn {
+  border-color: var(--accent) !important;
+  color: var(--accent) !important;
+  background: color-mix(in oklab, var(--accent) 6%, transparent);
+}
+.resume-btn:hover {
+  background: color-mix(in oklab, var(--accent) 14%, transparent) !important;
+  transform: translateY(-1px);
+}
 
 /* ---------- type scale ---------- */
 .eyebrow {

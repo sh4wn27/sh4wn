@@ -81,6 +81,7 @@ function App() {
             <a href="#experience">experience</a>
             <a href="#skills">skills</a>
           </div>
+          <a href="/resume.pdf" target="_blank" rel="noreferrer" className="nav-cta nav-resume">résumé ↗</a>
           <a href="mailto:shawnli1028@gmail.com" className="nav-cta">get in touch ↗</a>
         </div>
       </nav>
@@ -130,6 +131,7 @@ function App() {
               <a href="https://www.linkedin.com/in/huanxuan-li-b99ba72a5/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
               <a href="https://www.instagram.com/sh4wn.27/" target="_blank" rel="noreferrer">Instagram ↗</a>
               <a href="mailto:shawnli1028@gmail.com">Email ↗</a>
+              <a href="/resume.pdf" target="_blank" rel="noreferrer" className="resume-btn">Résumé ↗</a>
             </div>
           </div>
 
@@ -216,7 +218,7 @@ function App() {
               </div>
               <div className="proj-body">
                 <div className="proj-tags"><span>AI/ML</span><span>Computer Vision</span><span>Startup</span></div>
-                <h3>SkinAI</h3>
+                <h3>SKINAI</h3>
                 <p className="sub">Computer Vision Skin Analysis Platform</p>
                 <p className="desc">
                   AI-powered skin analysis platform with thousands of users and
@@ -240,7 +242,7 @@ function App() {
               </div>
               <div className="proj-body">
                 <div className="proj-tags"><span>Mobile App</span><span>Full Stack</span><span>Competition</span></div>
-                <h3>FBLA Fuse</h3>
+                <h3>FBLA FUSE</h3>
                 <p className="sub">Chapter Management Mobile App</p>
                 <p className="desc">
                   Chapter management mobile app built for FBLA. 2nd place NOVA
