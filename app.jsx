@@ -81,8 +81,10 @@ function App() {
             <a href="#experience">experience</a>
             <a href="#skills">skills</a>
           </div>
-          <a href="/resume.pdf" target="_blank" rel="noreferrer" className="nav-cta nav-resume">résumé ↗</a>
-          <a href="mailto:shawnli1028@gmail.com" className="nav-cta">get in touch ↗</a>
+          <div className="nav-actions">
+            <a href="/resume.pdf" target="_blank" rel="noreferrer" className="nav-cta">résumé ↗</a>
+            <a href="mailto:shawnli1028@gmail.com" className="nav-cta">get in touch ↗</a>
+          </div>
         </div>
       </nav>
 
@@ -131,7 +133,7 @@ function App() {
               <a href="https://www.linkedin.com/in/huanxuan-li-b99ba72a5/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
               <a href="https://www.instagram.com/sh4wn.27/" target="_blank" rel="noreferrer">Instagram ↗</a>
               <a href="mailto:shawnli1028@gmail.com">Email ↗</a>
-              <a href="/resume.pdf" target="_blank" rel="noreferrer" className="resume-btn">Résumé ↗</a>
+              <a href="/resume.pdf" target="_blank" rel="noreferrer">Résumé ↗</a>
             </div>
           </div>
 
