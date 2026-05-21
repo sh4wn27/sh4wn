@@ -579,9 +579,9 @@ function App() {
             <Exp type="Research" when="2025" where="Fairfax, VA"
                  title="ASSIP Research Intern" org="George Mason University"
                  desc="Aspiring Scientists Summer Internship Program. Built ML models (Random Forest, SVM) for predicting metal-organic dissolution and adhesion." />
-            <Exp type="Startup" when="MAR 2024 – JUL 2024" where="New York, NY"
+            <Exp type="Startup" when="2024" where="New York, NY"
                  title="Marketing Intern" org="Venture Camp"
-                 desc="Startup incubator backed by venture capital, empowering high school students to build real startups with mentorship from top founders. Led outreach and ambassador efforts across FTC robotics and hackathon communities to boost applications and expand brand presence, driving ~30% increase in traction." />
+                 desc="VC-backed startup incubator for high school founders. Led outreach across youth organizations and hackathon communities to form partnerships, growing applications and brand presence by ~30%." />
             <Exp now type="Nonprofit" when="2022 – present" where="International · 501(c)(3)"
                  title="Founder & Executive Director" org="Growing Up with Robotics"
                  desc="Founded and lead an international nonprofit delivering robotics and STEM education to underserved communities. 7,000+ students reached, $34K+ raised, 300+ service hours." />
