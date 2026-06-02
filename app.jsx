@@ -188,7 +188,6 @@ function App() {
                 <span className="proj-num">01</span>
                 <span className="proj-status"><span className="d" />ACTIVE · PENDING PATENT</span>
                 <ProjectCapaVis />
-                <span className="proj-vis-label">[ capa.architecture.dwg ]</span>
               </div>
               <div className="proj-body">
                 <div className="proj-tags">
@@ -216,7 +215,6 @@ function App() {
                 <span className="proj-num">02</span>
                 <span className="proj-status"><span className="d" />ACTIVELY OPERATING</span>
                 <ProjectSkinVis />
-                <span className="proj-vis-label">[ skinai.cv.dwg ]</span>
               </div>
               <div className="proj-body">
                 <div className="proj-tags"><span>AI/ML</span><span>Computer Vision</span><span>Startup</span></div>
@@ -240,7 +238,6 @@ function App() {
                 <span className="proj-num">03</span>
                 <span className="proj-status"><span className="d" />2ND · NOVA REGIONAL</span>
                 <ProjectFuseVis />
-                <span className="proj-vis-label">[ fuse.app.dwg ]</span>
               </div>
               <div className="proj-body">
                 <div className="proj-tags"><span>Mobile App</span><span>Full Stack</span><span>Competition</span></div>
@@ -264,7 +261,6 @@ function App() {
                 <span className="proj-num">04</span>
                 <span className="proj-status"><span className="d" />ACTIVE</span>
                 <ProjectGurVis />
-                <span className="proj-vis-label">[ gur.reach.map ]</span>
               </div>
               <div className="proj-body">
                 <div className="proj-tags"><span>Nonprofit</span><span>STEM Education</span><span>Leadership</span></div>
@@ -287,7 +283,6 @@ function App() {
                 <span className="proj-num">05</span>
                 <span className="proj-status"><span className="d" />CHESAPEAKE CHAMPIONSHIP</span>
                 <ProjectFtcVis />
-                <span className="proj-vis-label">[ ftc.14607.dwg ]</span>
               </div>
               <div className="proj-body">
                 <div className="proj-tags"><span>Competitive Robotics</span><span>Engineering</span><span>Captain</span></div>
@@ -744,18 +739,45 @@ function SkillGroup({ name, count, items }) {
 }
 
 // project visualizations
+const projectImgBase = {
+  position: 'absolute',
+  inset: 0,
+  width: '100%',
+  height: '100%',
+  objectFit: 'cover',
+  display: 'block',
+};
+
+function ProjectImage({ src, alt, position = 'center center', zoom = 1 }) {
+  return (
+    <img
+      src={src}
+      alt={alt}
+      style={{
+        ...projectImgBase,
+        objectPosition: position,
+        transform: `scale(${zoom})`,
+        transformOrigin: position,
+      }}
+    />
+  );
+}
+
 function ProjectCapaVis() {
   return (
     <>
-      <img src="img/01.png" alt="CAPA" style={{position:'absolute', inset:0, width:'100%', height:'100%', objectFit:'cover'}} />
+      <ProjectImage
+        src="img/01.png"
+        alt="CAPA"
+        position="center center"
+        zoom={1}
+      />
       <div style={{
-        position:'absolute',
-        bottom:0,
-        left:0,
-        right:0,
-        height:'50px',
-        background:'linear-gradient(to bottom, transparent, rgba(255,255,255,0.1))',
-        pointerEvents:'none'
+        position: 'absolute',
+        inset: 0,
+        background: 'linear-gradient(to right, rgba(255,255,255,0.02), rgba(255,255,255,0.12))',
+        pointerEvents: 'none',
+        zIndex: 1
       }} />
     </>
   );
@@ -763,50 +785,53 @@ function ProjectCapaVis() {
 
 function ProjectSkinVis() {
   return (
-    <img src="img/03.png" alt="SKINAI" style={{position:'absolute', inset:0, width:'100%', height:'100%', objectFit:'cover'}} />
+    <ProjectImage
+      src="img/03.png"
+      alt="SKINAI"
+      position="center top"
+      zoom={1.18}
+    />
   );
 }
 
 function ProjectFuseVis() {
   return (
     <>
-      <img src="img/06.jpg" alt="FBLA Fuse" style={{position:'absolute', inset:0, width:'100%', height:'100%', objectFit:'cover'}} />
+      <ProjectImage
+        src="img/06.jpg"
+        alt="FBLA Fuse"
+        position="center center"
+        zoom={1.05}
+      />
       <div style={{
-        position:'absolute',
-        inset:0,
-        backgroundColor:'rgba(255,255,255,0.25)',
-        pointerEvents:'none'
+        position: 'absolute',
+        inset: 0,
+        backgroundColor: 'rgba(255,255,255,0.18)',
+        pointerEvents: 'none'
       }} />
     </>
   );
 }
 
-function ProjectFtcVis() {
-  return (
-    <img src="img/05.jpg" alt="FTC 14607" style={{position:'absolute', inset:0, width:'100%', height:'100%', objectFit:'cover'}} />
-  );
-}
-
 function ProjectGurVis() {
   return (
-    <img src="img/04.jpg" alt="GUR" style={{position:'absolute', inset:0, width:'100%', height:'100%', objectFit:'cover'}} />
+    <ProjectImage
+      src="img/04.jpg"
+      alt="GUR"
+      position="center center"
+      zoom={1.05}
+    />
   );
 }
 
-function ProjectAymVis() {
+function ProjectFtcVis() {
   return (
-    <svg viewBox="0 0 400 220" style={{position:'absolute', inset:0, width:'100%', height:'100%'}}>
-      <g stroke="var(--accent)" fill="none">
-        {Array.from({length: 6}).map((_, i) => (
-          <circle key={i} cx={80 + i*48} cy={110} r="14" />
-        ))}
-        <line x1="80" y1="140" x2="320" y2="140" />
-      </g>
-      <g fontFamily="JetBrains Mono" fontSize="9" fill="var(--ink-dim)">
-        <text x="14" y="40">summer camp · 50+ kids</text>
-        <text x="14" y="56" fill="var(--ink-mute)">lego spike · cad · python</text>
-      </g>
-    </svg>
+    <ProjectImage
+      src="img/05.jpg"
+      alt="FTC 14607"
+      position="center center"
+      zoom={1.05}
+    />
   );
 }
 

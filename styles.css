@@ -480,8 +480,11 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
    PROJECT cards
    ================================================================= */
 .proj-grid {
-  display: grid; grid-template-columns: repeat(12, 1fr); gap: 24px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 24px;
 }
+
 .proj {
   grid-column: span 6;
   border: 1px solid var(--line);
@@ -491,82 +494,190 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
   overflow: hidden;
   position: relative;
   transition: 220ms;
-  display: flex; flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
-.proj.featured { grid-column: span 12; flex-direction: row; min-height: 360px; }
-.proj.featured .proj-vis { flex: 1; min-width: 0; }
-.proj.featured .proj-body { width: 44%; }
-.proj:hover { transform: translateY(-2px); border-color: #d0ccc2; }
 
+.proj.featured {
+  grid-column: span 12;
+  flex-direction: row;
+  min-height: 360px;
+  align-items: stretch;
+}
+
+.proj.featured .proj-vis {
+  flex: 1;
+  min-width: 0;
+  height: auto;
+  min-height: 360px;
+  align-self: stretch;
+}
+
+.proj.featured .proj-body {
+  width: 44%;
+}
+
+.proj:hover {
+  transform: translateY(-2px);
+  border-color: #d0ccc2;
+}
+
+.proj.featured {
+  grid-column: span 12;
+  flex-direction: row;
+  min-height: 360px;
+  align-items: stretch;
+}
+
+.proj.featured .proj-vis {
+  flex: 1;
+  min-width: 0;
+  height: auto;
+  min-height: 360px;
+  align-self: stretch;
+}
+
+.proj.featured .proj-body {
+  width: 44%;
+}
 .proj-vis {
   height: 220px;
   background: var(--bg-3);
   position: relative;
   overflow: hidden;
+  isolation: isolate;
 }
+
+.proj-vis img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .proj-vis::before {
-  content: ""; position: absolute; inset: 0;
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
   background:
     repeating-linear-gradient(135deg, rgba(0,0,0,0.025) 0 2px, transparent 2px 12px);
 }
+
+.proj-num,
+.proj-status,
 .proj-vis-label {
-  position: absolute; left: 16px; bottom: 14px;
-  font-family: var(--font-mono); font-size: 10px;
-  color: var(--ink-mute); letter-spacing: 0.1em;
+  z-index: 2;
 }
+
+.proj-vis-label {
+  position: absolute;
+  left: 16px;
+  bottom: 14px;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--ink-mute);
+  letter-spacing: 0.1em;
+}
+
 .proj-num {
-  position: absolute; top: 14px; left: 16px;
-  font-family: var(--font-mono); font-size: 11px;
+  position: absolute;
+  top: 14px;
+  left: 16px;
+  font-family: var(--font-mono);
+  font-size: 11px;
   color: var(--accent);
 }
+
 .proj-status {
-  position: absolute; top: 14px; right: 16px;
-  font-family: var(--font-mono); font-size: 10px;
-  letter-spacing: 0.1em; color: var(--ink-dim);
-  display: flex; align-items: center; gap: 6px;
+  position: absolute;
+  top: 14px;
+  right: 16px;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  color: var(--ink-dim);
+  display: flex;
+  align-items: center;
+  gap: 6px;
 }
-.proj-status .d {
-  width: 6px; height: 6px; border-radius: 50%; background: var(--accent);
-  box-shadow: 0 0 8px var(--accent);
+
+.proj-body {
+  padding: 24px 26px 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
-.proj-body { padding: 24px 26px 26px; display: flex; flex-direction: column; gap: 12px; }
-.proj-tags { display: flex; gap: 6px; flex-wrap: wrap; }
+
+.proj-tags {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
 .proj-tags span {
-  font-family: var(--font-mono); font-size: 10px;
-  text-transform: uppercase; letter-spacing: 0.1em;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
   color: var(--ink-dim);
   padding: 3px 7px;
   border: 1px solid var(--line);
   border-radius: 3px;
 }
+
 .proj h3 {
-  font-family: var(--font-display); font-weight: 400;
-  font-size: 32px; line-height: 1.05; letter-spacing: -0.01em;
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1.05;
+  letter-spacing: -0.01em;
   margin: 4px 0 6px;
 }
-.proj .sub { color: var(--ink-dim); font-size: 14px; margin: 0; }
-.proj .desc { color: var(--ink-dim); font-size: 14px; line-height: 1.55; margin: 8px 0 0; }
-.proj .stack { font-family: var(--font-mono); font-size: 11px; color: var(--ink-mute); margin-top: auto; padding-top: 18px; }
-.proj-links { display: flex; gap: 8px; margin-top: 14px; }
+
+.proj .sub {
+  color: var(--ink-dim);
+  font-size: 14px;
+  margin: 0;
+}
+
+.proj .desc {
+  color: var(--ink-dim);
+  font-size: 14px;
+  line-height: 1.55;
+  margin: 8px 0 0;
+}
+
+.proj .stack {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--ink-mute);
+  margin-top: auto;
+  padding-top: 18px;
+}
+
+.proj-links {
+  display: flex;
+  gap: 8px;
+  margin-top: 14px;
+}
+
 .proj-links a {
-  font-family: var(--font-mono); font-size: 11px;
-  padding: 6px 10px; border: 1px solid var(--line); border-radius: var(--r-sm);
-  color: var(--ink-dim); transition: 160ms;
-}
-.proj-links a:hover { border-color: var(--accent); color: var(--accent); }
-
-@media (max-width: 900px) {
-  .proj, .proj.featured { grid-column: span 12; flex-direction: column; }
-  .proj.featured .proj-body { width: 100%; }
+  font-family: var(--font-mono);
+  font-size: 11px;
+  padding: 6px 10px;
+  border: 1px solid var(--line);
+  border-radius: var(--r-sm);
+  color: var(--ink-dim);
+  transition: 160ms;
 }
 
-/* per-project hero visualizations */
-.vis-capa { background: radial-gradient(circle at 30% 30%, rgba(255,45,126,0.10), transparent 50%), var(--bg-3); }
-.vis-skin { background: radial-gradient(circle at 70% 60%, rgba(255,138,61,0.10), transparent 50%), var(--bg-3); }
-.vis-fuse { background: radial-gradient(circle at 50% 40%, rgba(60,120,200,0.08),  transparent 55%), var(--bg-3); }
-.vis-ftc  { background: radial-gradient(circle at 30% 70%, rgba(255,45,126,0.08),  transparent 50%), var(--bg-3); }
-.vis-gur  { background: radial-gradient(circle at 60% 40%, rgba(40,40,40,0.04),    transparent 55%), var(--bg-3); }
-.vis-aym  { background: radial-gradient(circle at 50% 50%, rgba(255,45,126,0.06),  transparent 55%), var(--bg-3); }
+.proj-links a:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
 
 /* =================================================================
    ABOUT — scrapbook
