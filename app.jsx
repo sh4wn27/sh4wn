@@ -589,7 +589,7 @@ function App() {
                  title="Founder & Executive Developer" org="CAPA"
                  desc="Solo-built open-source ML framework for HSCT outcome prediction. Pending patent." />
             <Exp now type="Project" when="2024 – present" where="Remote"
-                 title="Founder & Executive Developer" org="SkinAI"
+                 title="Founder & Executive Developer" org="SKINAI"
                  desc="Solo founder of a computer-vision dermatological screening platform. Thousands of users, pending patent." />
             <Exp now type="Robotics" when="2024 – present" where="Alexandria, VA"
                  title="Team Captain" org="FTC Team 14607 Robot Uprising"
@@ -747,7 +747,7 @@ function SkillGroup({ name, count, items }) {
 function ProjectCapaVis() {
   return (
     <>
-      <img src="img/01.jpg" alt="CAPA" style={{position:'absolute', inset:0, width:'100%', height:'100%', objectFit:'cover'}} />
+      <img src="img/01.png" alt="CAPA" style={{position:'absolute', inset:0, width:'100%', height:'100%', objectFit:'cover'}} />
       <div style={{
         position:'absolute',
         bottom:0,
@@ -763,7 +763,7 @@ function ProjectCapaVis() {
 
 function ProjectSkinVis() {
   return (
-    <img src="img/03.jpg" alt="SkinAI" style={{position:'absolute', inset:0, width:'100%', height:'100%', objectFit:'cover'}} />
+    <img src="img/03.png" alt="SKINAI" style={{position:'absolute', inset:0, width:'100%', height:'100%', objectFit:'cover'}} />
   );
 }
 
