@@ -1,7 +1,5 @@
 // sh4wn — main app (white theme, hot pink accent, casual copy)
 
-import { Analytics } from "@vercel/analytics/next"
-
 const TWEAKS_DEFAULTS = /*EDITMODE-BEGIN*/{
   "hero": "terminal",
   "accent": "#ff2d7e",
