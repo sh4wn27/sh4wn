@@ -205,7 +205,7 @@ function App() {
                 <div className="stack">Python · PyTorch · FastAPI · Next.js</div>
                 <div className="proj-links">
                   <a href="https://github.com/sh4wn27/capa" target="_blank" rel="noreferrer">GitHub ↗</a>
-                  <a href="https://capa-rho.vercel.app/about" target="_blank" rel="noreferrer">Website ↗</a>
+                  <a href="https://www.capa-dev.com/" target="_blank" rel="noreferrer">Website ↗</a>
                 </div>
               </div>
             </article>
