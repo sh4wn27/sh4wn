@@ -496,7 +496,7 @@ function App() {
               venue="2026 — in preparation"
               links={[
                 ['GitHub', 'https://github.com/sh4wn27/heta'],
-                ['Manuscript', 'https://drive.google.com/file/d/1xltdu7sprKRQJcom9y0wyQmL4Eo-f5uR/view?usp=sharing'],
+                ['Manuscript', 'https://drive.google.com/file/d/1kC_K6QZAr61jV02CTtKAzNNGIzX9zUZo/view?usp=sharing'],
               ]}
             />
             <ResEntry
