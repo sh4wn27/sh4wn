@@ -77,11 +77,11 @@ function App() {
             <a href="#work">work</a>
             <a href="#about">about</a>
             <a href="#beyond">beyond</a>
-            <a href="/life.html">life</a>
             <a href="#research">research</a>
             <a href="#experience">experience</a>
             <a href="#skills">skills</a>
-            <a href="https://growingupwithrobotics.org" target="_blank" rel="noreferrer">robotics ↗</a>
+            <a href="https://growingupwithrobotics.org" target="_blank" rel="noreferrer">gur ↗</a>
+            <a href="https://robotuprising.org" target="_blank" rel="noreferrer">ftc ↗</a>
           </div>
           <div className="nav-actions">
             <a href="/resume.pdf" target="_blank" rel="noreferrer" className="nav-cta">résumé ↗</a>
