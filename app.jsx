@@ -77,9 +77,11 @@ function App() {
             <a href="#work">work</a>
             <a href="#about">about</a>
             <a href="#beyond">beyond</a>
+            <a href="/life.html">life</a>
             <a href="#research">research</a>
             <a href="#experience">experience</a>
             <a href="#skills">skills</a>
+            <a href="https://growingupwithrobotics.org" target="_blank" rel="noreferrer">robotics ↗</a>
           </div>
           <div className="nav-actions">
             <a href="/resume.pdf" target="_blank" rel="noreferrer" className="nav-cta">résumé ↗</a>
@@ -122,8 +124,8 @@ function App() {
             </div>
 
             <p className="hero-bio">
-              Huanxuan, also known as <strong>Shawn</strong>, is a junior at Thomas Jefferson High
-              School for Science & Technology. Incoming Researcher @ Children's National,
+              Huanxuan, also known as <strong>Shawn</strong>, is a senior at Thomas Jefferson High
+              School for Science & Technology. Researcher @ Children's National,
               Building at the intersection of
               <strong> AI, biomedicine, and robotics.</strong>
             </p>
@@ -316,7 +318,7 @@ function App() {
           <div className="scrap">
             <div className="scrap-prose">
               <p>
-                Hey! I'm a junior at TJHSST in Northern Virginia. I was born in
+                Hey! I'm a senior at TJHSST in Northern Virginia. I was born in
                 <strong> 新丰</strong> and immigrated from China in 2019. After
                 arriving in the U.S., I taught myself English, started going to
                 church and found a close group of friends. At the age of 13, I
@@ -328,7 +330,7 @@ function App() {
               </p>
               <p className="dim">
                 I've conducted research at Stanford through iGEM, at George
-                Mason University through ASSIP, and about to begin my
+                Mason University through ASSIP, and am now conducting my
                 senior year long research at Children's National Hospital.
                 CAPA is my effort to turn that lived experience into something
                 that could genuinely help the next child in that situation,
@@ -496,7 +498,7 @@ function App() {
               venue="2026 — in preparation"
               links={[
                 ['GitHub', 'https://github.com/sh4wn27/heta'],
-                ['Manuscript', 'https://drive.google.com/file/d/1kC_K6QZAr61jV02CTtKAzNNGIzX9zUZo/view?usp=sharing'],
+                ['Manuscript', 'https://drive.google.com/file/d/1xltdu7sprKRQJcom9y0wyQmL4Eo-f5uR/view?usp=sharing'],
               ]}
             />
             <ResEntry
